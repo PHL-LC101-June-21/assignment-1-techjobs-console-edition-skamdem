@@ -100,17 +100,17 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if (someJobs.isEmpty()) {
-            System.out.println("no Jobs were found!");
+            System.out.print("No Results");
             return;
         }
         for (HashMap<String, String> hashmap : someJobs){
-            System.out.println("*****\n" +
+            System.out.println("\n*****\n" +
                     "position type: "+hashmap.get("position type")+"\n" +
                     "name: "+hashmap.get("name")+"\n" +
                     "employer: "+hashmap.get("employer")+"\n" +
                     "location: "+hashmap.get("location")+"\n" +
                     "core competency: "+hashmap.get("core competency")+"\n" +
-                    "*****\n");
+                    "*****");
         }
         //System.out.println(someJobs.size()+" Jobs were found!");
     }
