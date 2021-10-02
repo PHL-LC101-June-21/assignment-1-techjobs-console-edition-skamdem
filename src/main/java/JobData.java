@@ -80,12 +80,14 @@ public class JobData {
     public static ArrayList<HashMap<String, String>> findByValue(String value) {
         // load data, if not already loaded
         loadData();
-        Set<HashMap<String, String>> results = new HashSet<>();
+        //Set<HashMap<String, String>> results = new HashSet<>();
+        List<HashMap<String, String>> results = new ArrayList<>();
         for (HashMap<String, String> hashmap : allJobs){
 //            if (hashmap.containsKey(value.toLowerCase())
 //                    || hashmap.containsValue(value.toLowerCase())) {
 //                results.add(hashmap);
 //            }
+
             List<String> allLowercase = hashmap.values()
                     .stream()
                     .map(String::toLowerCase)
